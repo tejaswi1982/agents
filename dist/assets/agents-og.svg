@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#eeeae1"/>
+<g fill="#262620" font-family="Arial,Helvetica,sans-serif">
+<text x="67" y="65" font-size="22">Abhinandan Tejaswi</text>
+<path d="M67 92H1133" stroke="#bdb7ab"/>
+<text x="66" y="320" font-size="198" letter-spacing="-12">AGENTS<tspan fill="#a6381c">.</tspan></text>
+<text x="73" y="414" font-size="43" letter-spacing="-1">Things that <tspan font-family="Georgia,serif" font-style="italic">do things.</tspan></text>
+<text x="74" y="553" font-size="16" font-family="Courier New,monospace" fill="#67635b">SMALL SYSTEMS BUILT AROUND ACTUAL PROBLEMS.</text>
+<text x="1089" y="553" font-size="16" font-family="Courier New,monospace" fill="#a6381c">01</text>
+</g></svg>

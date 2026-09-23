@@ -1,0 +1,149 @@
+[
+  {
+    "title": "Website Recovery Agent",
+    "slug": "website-recovery",
+    "status": "Prototype",
+    "description": "Finds what is weak in a local-business website, then builds a better version.",
+    "process": [
+      "Audit",
+      "Position",
+      "Rebuild"
+    ],
+    "problem": "A local business can have a clear strength and still have little useful presence online.",
+    "build": "An audit and positioning workflow that leads to a website direction. Designer Dental is one of five clinic previews, with the practice, doctor, services and consultation route brought into focus.",
+    "primaryVisual": {
+      "src": "dental.webp",
+      "width": 1348,
+      "height": 926,
+      "alt": "Designer Dental website preview: Dental brilliance, made gentle, with Dr. Kaynat Gilani and consultation links."
+    },
+    "secondaryVisual": null,
+    "caption": "Designer Dental / Khar West",
+    "note": "One of five clinic website directions.",
+    "liveUrl": "https://designerdentalpreview.netlify.app/",
+    "caseStudyUrl": null,
+    "disclosure": "Website direction, not a before-and-after claim.",
+    "featured": true,
+    "order": 1,
+    "layout": "wide",
+    "ctaLabel": "View website"
+  },
+  {
+    "title": "Google Reputation Engine",
+    "slug": "google-reputation",
+    "status": "Prototype",
+    "description": "Turns public review data into a clear reputation gap and action plan.",
+    "process": [
+      "Compare",
+      "Diagnose",
+      "Prioritise"
+    ],
+    "problem": "Similar star ratings can hide a very different scale of public review evidence.",
+    "build": "A public-data comparison that makes the reputation gap legible before deciding what to work on next. This supplied audit compares The Dandelion Dental Experience with Ceramco Dental.",
+    "primaryVisual": {
+      "src": "reputation.webp",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Audit comparing Dandelion Dental and Ceramco Dental: both rated 4.9, with 139 and 1,691 reviews respectively, based on public data checked 28 July 2026."
+    },
+    "secondaryVisual": null,
+    "caption": "Public-data audit / 28 July 2026",
+    "note": "Same rating. A different review base.",
+    "liveUrl": null,
+    "caseStudyUrl": null,
+    "disclosure": "An archived public-data snapshot. Figures are not a live feed or a claim of results delivered.",
+    "featured": true,
+    "order": 2,
+    "layout": "paper",
+    "ctaLabel": null
+  },
+  {
+    "title": "Missed Enquiry Recovery",
+    "slug": "missed-enquiry",
+    "status": "Prototype",
+    "description": "Finds patient enquiries that went quiet before they became appointments.",
+    "process": [
+      "Track",
+      "Follow up",
+      "Recover"
+    ],
+    "problem": "An enquiry can disappear between the first reply and an appointment.",
+    "build": "A lightweight 7-day enquiry tracker built for VIBGYOR Pediatric & Family Dental Care, Borivali West. Today, follow-ups and the report sit alongside no-show recovery, recalls and manual reply drafts.",
+    "primaryVisual": {
+      "type": "interactive",
+      "src": "evidence/tracker/index.html",
+      "title": "VIBGYOR enquiry tracker: interactive prototype using fictional sample data"
+    },
+    "secondaryVisual": null,
+    "caption": "VIBGYOR / Borivali West",
+    "note": "Try Today, Follow-ups or Report.",
+    "liveUrl": null,
+    "caseStudyUrl": null,
+    "disclosure": "Fictional sample data. Changes reset on reload. No medical records. Nothing is sent.",
+    "featured": false,
+    "order": 3,
+    "layout": "tracker",
+    "ctaLabel": null
+  },
+  {
+    "title": "BCCL Brand Voice Agent",
+    "slug": "brand-voice",
+    "status": "Work sample",
+    "description": "Drafts inside a locked brand voice, then lets a human choose, reject and redirect.",
+    "process": [
+      "Voice lock",
+      "Options",
+      "Feedback",
+      "Revise"
+    ],
+    "problem": "A draft can sound plausible and still miss the brand's voice or the editor's judgement.",
+    "build": "A work sample that carries public voice constraints through options, selection, feedback and revision. The captured case-study run makes the prior and revised copy visible together; the public demo uses an offline generator.",
+    "primaryVisual": {
+      "src": "brand-voice.webp",
+      "width": 1363,
+      "height": 936,
+      "alt": "BCCL work-sample case study showing human choice and feedback, then prior and revised copy side by side."
+    },
+    "secondaryVisual": null,
+    "caption": "Captured case-study run / Offline generator",
+    "note": "AI drafts. Humans keep taste.",
+    "liveUrl": "https://blissful-mirage-hg4s.here.now/",
+    "caseStudyUrl": "https://blissful-mirage-hg4s.here.now/case.html",
+    "disclosure": "Work sample. Not affiliated with BCCL / Times of India. Public voice constraints, not an internal brand book.",
+    "featured": false,
+    "order": 4,
+    "layout": "voice",
+    "ctaLabel": "Try agent"
+  },
+  {
+    "title": "Content Supply Chain Console",
+    "slug": "content-supply-chain",
+    "status": "Work sample",
+    "description": "One brief, multiple formats, human gates, localisation and approval.",
+    "process": [
+      "Brief",
+      "Generate",
+      "Choose",
+      "Localise",
+      "Approve"
+    ],
+    "problem": "Moving one idea across formats and markets creates more decisions than a single prompt can hold.",
+    "build": "A console that carries a locked brand and master brief through social, video and email options, human selection, feedback and market versions. The public demo uses an offline generator and a fictional sample brand.",
+    "primaryVisual": {
+      "src": "supply-chain.webp",
+      "width": 1348,
+      "height": 926,
+      "alt": "Content Supply Chain Console at Localize and approve, showing India English and UK English versions of social, video and email outputs."
+    },
+    "secondaryVisual": null,
+    "caption": "Localisation stage / Offline generator",
+    "note": "One master. Two market voices. A human gate.",
+    "liveUrl": "https://walnut-hearth-9pgc.here.now/",
+    "caseStudyUrl": "https://walnut-hearth-9pgc.here.now/case.html",
+    "disclosure": "Work sample / speculative demo. Not affiliated with Accenture and not an Accenture commission.",
+    "featured": true,
+    "order": 5,
+    "layout": "console",
+    "ctaLabel": "Try console"
+  }
+]

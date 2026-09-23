@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /evidence/
+Sitemap: https://agents.abhinandantejaswi.com/sitemap.xml
