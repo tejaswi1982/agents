@@ -20,7 +20,9 @@ def process(p):return '<p class="process">'+' <span aria-hidden="true">/</span> 
 def visual(p,prefix=''):
  a=p['primaryVisual']
  if a.get('type')=='interactive':
-  return f'''<figure class="evidence tracker-evidence"><div class="artifact-label"><span>Interactive prototype</span><span>Fictional data</span></div><iframe src="{prefix}{a['src']}" title="{e(a['title'])}" loading="lazy" sandbox="allow-scripts allow-downloads" referrerpolicy="no-referrer" width="620" height="740"></iframe><figcaption><span>{e(p['caption'])}</span><a href="{prefix}{a['src']}" target="_blank" rel="noopener noreferrer">Open prototype ↗</a></figcaption></figure>'''
+  prototype_url=p.get('liveUrl') or prefix+a['src']
+  prototype_label=p.get('ctaLabel') or 'Open prototype'
+  return f'''<figure class="evidence tracker-evidence"><div class="artifact-label"><span>Interactive prototype</span><span>Fictional data</span></div><iframe src="{prefix}{a['src']}" title="{e(a['title'])}" loading="lazy" sandbox="allow-scripts allow-downloads" referrerpolicy="no-referrer" width="620" height="740"></iframe><figcaption><span>{e(p['caption'])}</span><a href="{e(prototype_url)}" target="_blank" rel="noopener noreferrer">{e(prototype_label)} ↗</a></figcaption></figure>'''
  src=prefix+'assets/'+a['src'];stem=src.rsplit('.',1)[0]
  return f'''<figure class="evidence"><a class="evidence-link" href="{src}" data-enlarge data-caption="{e(p['caption'])}" aria-label="Enlarge evidence: {e(p['title'])}"><img src="{src}" srcset="{stem}-640.webp 640w, {src} {a['width']}w" sizes="(max-width:700px) 92vw, {'46vw' if p['layout']=='paper' else '85vw'}" width="{a['width']}" height="{a['height']}" alt="{e(a['alt'])}" loading="lazy" decoding="async"></a><figcaption><span>{e(p['caption'])}</span><a href="{src}" data-enlarge data-caption="{e(p['caption'])}" aria-label="Enlarge evidence: {e(p['title'])}">Enlarge +</a></figcaption></figure>'''
 def links(p,prefix='',detail=False):

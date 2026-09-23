@@ -1,0 +1,35 @@
+{
+  "_note": "Fictional demo data. No real patient information. Import via the dashboard's Import JSON button. The in-app 'Load sample data' toggle generates a larger 38-enquiry demo; this file is a compact importable example that still shows price-cold and follow-up leak patterns.",
+  "setup": {
+    "clinicName": "Sample Smile Dental Clinic (demo)",
+    "startDate": "2026-06-10",
+    "duration": 7,
+    "staff": "Front desk",
+    "phone": "",
+    "sample": true
+  },
+  "enquiries": [
+    { "id": "d1", "source": "Call", "type": "Price / Cost", "label": "RS", "phone4": "4821", "receivedAt": "2026-06-10T10:15:00.000Z", "repliedAt": "2026-06-10T10:35:00.000Z", "status": "Interested", "appointmentAt": "", "followUpNeeded": true, "nextFollowUp": "2026-06-11", "notes": "asked about implant price, prefers evening" },
+    { "id": "d2", "source": "WhatsApp", "type": "Braces / Aligners", "label": "AP", "phone4": "1190", "receivedAt": "2026-06-10T12:02:00.000Z", "repliedAt": "2026-06-10T14:20:00.000Z", "status": "Interested", "appointmentAt": "", "followUpNeeded": true, "nextFollowUp": "2026-06-11", "notes": "wants aligner options" },
+    { "id": "d3", "source": "Walk-in", "type": "Cleaning / Scaling", "label": "", "phone4": "7754", "receivedAt": "2026-06-10T16:40:00.000Z", "repliedAt": "2026-06-10T16:40:00.000Z", "status": "Visited", "appointmentAt": "", "followUpNeeded": false, "nextFollowUp": "", "notes": "" },
+    { "id": "d4", "source": "Call", "type": "Tooth pain", "label": "MK", "phone4": "3320", "receivedAt": "2026-06-11T09:30:00.000Z", "repliedAt": "2026-06-11T09:36:00.000Z", "status": "Booked", "appointmentAt": "2026-06-12T11:00:00.000Z", "followUpNeeded": false, "nextFollowUp": "", "notes": "" },
+    { "id": "d5", "source": "Website Form", "type": "Price / Cost", "label": "", "phone4": "5567", "receivedAt": "2026-06-11T19:05:00.000Z", "status": "New", "appointmentAt": "", "followUpNeeded": true, "nextFollowUp": "2026-06-12", "notes": "after-hours form, asked cost of RCT" },
+    { "id": "d6", "source": "Google", "type": "Implant", "label": "JV", "phone4": "8841", "receivedAt": "2026-06-11T11:20:00.000Z", "repliedAt": "2026-06-11T12:50:00.000Z", "status": "Interested", "appointmentAt": "", "followUpNeeded": true, "nextFollowUp": "2026-06-12", "notes": "comparing clinics" },
+    { "id": "d7", "source": "Call", "type": "Price / Cost", "label": "", "phone4": "2093", "receivedAt": "2026-06-12T10:10:00.000Z", "repliedAt": "2026-06-12T10:14:00.000Z", "status": "Replied", "appointmentAt": "", "followUpNeeded": true, "nextFollowUp": "2026-06-13", "notes": "price only, did not book" },
+    { "id": "d8", "source": "WhatsApp", "type": "Cosmetic / Smile", "label": "Np", "phone4": "6610", "receivedAt": "2026-06-12T15:25:00.000Z", "repliedAt": "2026-06-12T18:40:00.000Z", "status": "Interested", "appointmentAt": "", "followUpNeeded": true, "nextFollowUp": "2026-06-13", "notes": "smile makeover query" },
+    { "id": "d9", "source": "Referral", "type": "Implant", "label": "SK", "phone4": "4402", "receivedAt": "2026-06-12T13:00:00.000Z", "repliedAt": "2026-06-12T13:20:00.000Z", "status": "Booked", "appointmentAt": "2026-06-14T17:30:00.000Z", "followUpNeeded": false, "nextFollowUp": "", "notes": "" },
+    { "id": "d10", "source": "Call", "type": "Tooth pain", "label": "", "phone4": "9981", "receivedAt": "2026-06-13T09:50:00.000Z", "repliedAt": "2026-06-13T09:55:00.000Z", "status": "No-show", "appointmentAt": "2026-06-14T10:00:00.000Z", "followUpNeeded": false, "nextFollowUp": "", "notes": "did not arrive" },
+    { "id": "d11", "source": "WhatsApp", "type": "Child dental visit", "label": "Aa", "phone4": "3375", "receivedAt": "2026-06-13T17:10:00.000Z", "repliedAt": "2026-06-13T20:05:00.000Z", "status": "No-show", "appointmentAt": "2026-06-15T16:00:00.000Z", "followUpNeeded": false, "nextFollowUp": "", "notes": "" },
+    { "id": "d12", "source": "Google", "type": "Price / Cost", "label": "", "phone4": "1247", "receivedAt": "2026-06-14T11:35:00.000Z", "repliedAt": "2026-06-14T13:10:00.000Z", "status": "Replied", "appointmentAt": "", "followUpNeeded": true, "nextFollowUp": "2026-06-15", "notes": "price for cleaning" },
+    { "id": "d13", "source": "Call", "type": "Reschedule / Cancel", "label": "BV", "phone4": "8830", "receivedAt": "2026-06-14T10:05:00.000Z", "repliedAt": "2026-06-14T10:09:00.000Z", "status": "Rescheduled", "appointmentAt": "2026-06-17T12:00:00.000Z", "followUpNeeded": false, "nextFollowUp": "", "notes": "moved to next week" },
+    { "id": "d14", "source": "Walk-in", "type": "Cleaning / Scaling", "label": "", "phone4": "5519", "receivedAt": "2026-06-15T12:20:00.000Z", "repliedAt": "2026-06-15T12:20:00.000Z", "status": "Confirmed", "appointmentAt": "2026-06-16T15:00:00.000Z", "followUpNeeded": false, "nextFollowUp": "", "notes": "" },
+    { "id": "d15", "source": "Instagram", "type": "Cosmetic / Smile", "label": "", "phone4": "7702", "receivedAt": "2026-06-15T18:45:00.000Z", "status": "New", "appointmentAt": "", "followUpNeeded": true, "nextFollowUp": "2026-06-16", "notes": "DM enquiry, whitening" }
+  ],
+  "recalls": [
+    { "id": "rc1", "type": "Cleaning / check-up", "label": "RS", "note": "due ~6 months", "status": "Open" },
+    { "id": "rc2", "type": "Braces / aligner review", "label": "AP", "note": "", "status": "Open" },
+    { "id": "rc3", "type": "Implant review", "label": "MK", "note": "", "status": "Open" },
+    { "id": "rc4", "type": "Incomplete treatment follow-up", "label": "JV", "note": "RCT pending crown", "status": "Open" }
+  ]
+}
+

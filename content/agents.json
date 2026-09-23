@@ -77,13 +77,13 @@
     "secondaryVisual": null,
     "caption": "VIBGYOR / Borivali West",
     "note": "Try Today, Follow-ups or Report.",
-    "liveUrl": null,
+    "liveUrl": "/missed-enquiry-demo/",
     "caseStudyUrl": null,
     "disclosure": "Fictional sample data. Changes reset on reload. No medical records. Nothing is sent.",
     "featured": false,
     "order": 3,
     "layout": "tracker",
-    "ctaLabel": null
+    "ctaLabel": "View prototype"
   },
   {
     "title": "BCCL Brand Voice Agent",
