@@ -30,10 +30,10 @@ for p in D.rglob('*.html'):
    if t=='img' and x.get('src'):assert x.get('width') and x.get('height'),f'Unreserved image dimensions: {p}'
 patterns=[r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY',r'\bAKIA[0-9A-Z]{16}\b',r'\b(?:sk-proj-|sk-ant-|ghp_|github_pat_)[A-Za-z0-9_-]{15,}',r'(?i)(?:api[_-]?key|password|secret|access[_-]?token)\s*[:=]\s*[\"\'][^\"\']{10,}[\"\']']
 for p in D.rglob('*'):
- if 'missed-enquiry-demo' in p.parts:continue
+ demo='missed-enquiry-demo' in p.parts
  if p.suffix not in ['.html','.css','.js','.json','.svg','.txt']:continue
  text=p.read_text()
- assert not re.search('[\u2013\u2014]',text),f'Disallowed dash in {p}'
+ if not demo:assert not re.search('[\u2013\u2014]',text),f'Disallowed dash in {p}'
  assert not any(re.search(pattern,text) for pattern in patterns),f'Potential secret requires review: {p.name}'
  assert not re.search(r'(?:localhost|127\.0\.0\.1|railway\.internal)',text),f'Internal address in {p}'
  assert not re.search(r'(?:gtag\(|googletagmanager|google-analytics|mixpanel|segment\.com|document\.cookie)',text),f'Tracking requires review: {p}'
