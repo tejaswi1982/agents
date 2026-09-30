@@ -43,7 +43,7 @@ body=intro
 for i,p in enumerate(P):
  body+=section(p)
  if i==2:body+='''<aside class="interlude"><span class="eyebrow">A working principle</span><p>Small systems.<br><em>Real friction.</em></p><span class="interlude-note">Leave room for judgement.</span></aside>'''
-body+=f'''</div><section class="about" id="about"><div><span class="eyebrow">A little context</span><h2>Still making.</h2></div><div><p>I’m a creative director who started building small systems around problems I kept noticing.</p><p class="about-note">Some are internal tools. Some are prototypes.<br>All started with a real use case.</p><a class="text-link" href="{e(SITE['contactUrl'])}" aria-label="{e(SITE['contactAriaLabel'])}">{e(SITE['contactLabel'])} ↗</a></div></section></main>'''
+body+=f'''</div><section class="about" id="about"><div><span class="eyebrow">A little context</span><h2>Still making.</h2></div><div><p>I’m a creative director who started building small systems around problems I kept noticing.</p><p class="about-note">Some are internal tools. Some are prototypes.<br>All started with a real use case.</p><a class="text-link" href="{e(SITE['contactUrl'])}" aria-label="{e(SITE['contactAriaLabel'])}">{e(SITE['contactLabel'])} ↗</a></div></section><nav class="ecosystem-next" aria-label="Next"><span class="eyebrow">NEXT</span><a href="https://projects.abhinandantejaswi.com/">Projects ↗</a><a href="https://products.abhinandantejaswi.com/">Products ↗</a></nav></main>
 (D/'index.html').write_text(head('Agents','Independent agent and automation builds by Abhinandan Tejaswi. Small systems built around real problems.','/')+nav()+body+footer())
 for i,p in enumerate(P):
  prefix='../../';path=f'/builds/{p["slug"]}/'; dest=D/path.strip('/');dest.mkdir(parents=True,exist_ok=True)
