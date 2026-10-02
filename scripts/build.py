@@ -32,6 +32,7 @@ def links(p,prefix='',detail=False):
   result+=f'<a class="primary-link" href="{e(p["liveUrl"])}" target="_blank" rel="noopener noreferrer" aria-label="{e(label)}: {e(p["title"])} (opens in a new tab)">{e(label)} ↗</a>'
  if p['caseStudyUrl']:result+=f'<a href="{e(p["caseStudyUrl"])}" target="_blank" rel="noopener noreferrer" aria-label="Case study: {e(p["title"])} (opens in a new tab)">Case study ↗</a>'
  if not detail and not p['caseStudyUrl']:result+=f'<a href="builds/{p["slug"]}/">Build notes <span aria-hidden="true">↗</span></a>'
+ if not detail and p.get('portfolioUrl'):result+=f'<a href="{e(p["portfolioUrl"])}" target="_blank" rel="noopener noreferrer" aria-label="Dental Website Portfolio: {e(p["title"])} (opens in a new tab)">Dental Website Portfolio ↗</a>'
  return '<div class="project-links">'+result+'</div>'
 def section(p):
  return f'''<section class="agent agent--{p['layout']}" id="{p['slug']}" aria-labelledby="title-{p['slug']}"><div class="agent-number"><span>{p['order']:02d}</span><span class="vertical-note">{e(p['status'])}</span></div><div class="agent-heading"><p class="eyebrow">{e(p['status'])}</p><h2 id="title-{p['slug']}"><a href="builds/{p['slug']}/">{e(p['title'])}</a></h2></div><div class="agent-summary"><p class="description">{e(p['description'])}</p>{process(p)}{links(p)}</div>{visual(p)}<div class="agent-note"><p>{e(p['note'])}</p><p class="disclosure">{e(p['disclosure'])}</p></div></section>'''
